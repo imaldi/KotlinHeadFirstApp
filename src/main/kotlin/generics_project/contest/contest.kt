@@ -1,7 +1,11 @@
 /// versi normal
 //class Contest<T: Pet> {
+
 /// versi type inference via constructer
-class Contest<T: Pet>(t: T? = null) {
+//class Contest<T: Pet>(t: T? = null) {
+
+/// versi accept a vet
+class Contest<T: Pet>(var vet: Vet<T>) {
     val scores: MutableMap<T, Int> = mutableMapOf()
 
     fun addScore(t: T, score: Int = 0){

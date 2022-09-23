@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98d5378e-0150-4004-bb22-2971bb85c29c" name="Changes" comment="before adding 'out' keyword to make retailer class generic type covariant">
+    <list default="true" id="98d5378e-0150-4004-bb22-2971bb85c29c" name="Changes" comment="before contravariant (adding 'in' keyword in vet type parameter)">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generics_project/vet/vet.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/generics_project/MainGenerics.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/generics_project/MainGenerics.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/generics_project/contest/contest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/generics_project/contest/contest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/generics_project/retailer/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/generics_project/retailer/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/generics_project/retailer/retailer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/generics_project/retailer/retailer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663952520128</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="after adding 'out' keyword to make retailer class generic type covariant">
+      <created>1663952772253</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663952772253</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,7 +112,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="learn basic generics" />
     <MESSAGE value="before adding 'out' keyword to make retailer class generic type covariant" />
-    <option name="LAST_COMMIT_MESSAGE" value="before adding 'out' keyword to make retailer class generic type covariant" />
+    <MESSAGE value="after adding 'out' keyword to make retailer class generic type covariant" />
+    <MESSAGE value="before contravariant (adding 'in' keyword in vet type parameter)" />
+    <option name="LAST_COMMIT_MESSAGE" value="before contravariant (adding 'in' keyword in vet type parameter)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

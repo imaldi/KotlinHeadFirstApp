@@ -20,3 +20,19 @@ properties of that generic type.
 > Another way of thinking about this is that a generic type that’s prefixed with out can only be used in an
 “out” position, such as a function return type. It can’t, however, be used in an “in” position, so a function
 can’t receive a covariant type as a parameter value.
+
+
+# Contravariant in Kotlin
+
+> Use `in` to make a generic type contravariant
+
+If a generic type is contravariant, it means that you can use a supertype in
+place of a subtype. This is the opposite of covariance.
+
+In general, a class or interface generic type may be prefixed with in if the class
+has functions that use it as a parameter type. You can’t, however, use in if any
+of the class functions use it as a return type, or if that type is used by any
+properties, irrespective of whether they’re defined using val or var.
+
+> In other words, a generic type that’s prefixed with “in” can only be used in an “in” position, such as a
+function parameter value. It can’t be used in “out” positions.

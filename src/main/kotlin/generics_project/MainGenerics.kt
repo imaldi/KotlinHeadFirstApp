@@ -8,11 +8,12 @@ import DogRetailer
 import Fish
 import Pet
 import Retailer
+import Vet
 
 @Suppress("JoinDeclarationAndAssignment")
 fun main(args: Array<String>) {
     /// normal
-    var catContest = Contest<Cat>()
+    var catContest = Contest(Vet<Cat>())
 
     catContest.addScore(Cat("Fuzz Lightyear"), 50)
     catContest.addScore(Cat("Katsu"), 45)
@@ -23,7 +24,7 @@ fun main(args: Array<String>) {
     println("top cat is ${topCat.name}")
 
     /// Contest<Pet>
-    val petContest = Contest<Pet>()
+    val petContest = Contest<Pet>(Vet())
     petContest.addScore(Cat("Oyen"), 50)
     petContest.addScore(Dog("Dogo"), 56)
 
@@ -31,9 +32,9 @@ fun main(args: Array<String>) {
     println("top pet is ${topPet.name} (a ${topPet.javaClass.toString().removePrefix("class ")})")
 
     var dogContest: Contest<Dog>
-    dogContest = Contest()
+    dogContest = Contest(Vet())
 
-    val fishContest = Contest(Fish("Fishhhh"))
+//    val fishContest = Contest(Fish("Fishhhh"))
 
     /// Retailers Code
     val catRetailer1 = CatRetailer()
@@ -59,4 +60,27 @@ fun main(args: Array<String>) {
 
     val catList: List<Cat> = listOf(Cat(""), Cat(""))
     val petList: List<Pet> = catList
+
+
+    /// vet codes
+    val catVet = Vet<Cat>()
+    val fishVet = Vet<Fish>()
+    val petVet = Vet<Pet>()
+
+    catVet.treat(Cat("cat a"))
+    petVet.treat(Cat("cat b"))
+    petVet.treat(Fish("fish a"))
+    /// disini dia eror
+//    catVet.treat(Fish("fish b"))
+
+    val catContest2 = Contest<Cat>(catVet)
+    val petContest2 = Contest<Pet>(petVet)
+
+//    But there’s a problem. A Vet<Pet> can treat all types of Pet, including Cats, but
+//    we can’t assign a Vet<Pet> to a Contest<Cat> as the code won’t compile:
+
+//    val catContest3 = Contest<Cat>(petVet) // ini error
+
+      /* Use in to make a generic type contravariant */
+    val catContest3 = Contest<Cat>(petVet) // setelah tambah 'in' di class Vet, ini tidak error
 }
