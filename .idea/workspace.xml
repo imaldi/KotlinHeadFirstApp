@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98d5378e-0150-4004-bb22-2971bb85c29c" name="Changes" comment="" />
+    <list default="true" id="98d5378e-0150-4004-bb22-2971bb85c29c" name="Changes" comment="edit program arguments in config">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generics_project/MainGenerics.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generics_project/contest/contest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generics_project/pet/pet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generics_project/retailer/retailer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -14,7 +28,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2F0ziVA0mduTmjO7AkjvnfTIqnt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,7 +43,14 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.language.Kotlin&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.MainGenericsKt">
+    <configuration name="MainGenericsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generics_project.MainGenericsKt" />
+      <module name="KotlinHeadFirstApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="KotlinHeadFirstApp" />
@@ -38,6 +61,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainGenericsKt" />
         <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>

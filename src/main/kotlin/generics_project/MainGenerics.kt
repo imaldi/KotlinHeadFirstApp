@@ -1,0 +1,34 @@
+package generics_project
+
+import Cat
+import Contest
+import Dog
+import Fish
+import Pet
+
+@Suppress("JoinDeclarationAndAssignment")
+fun main(args: Array<String>) {
+    /// normal
+    var catContest = Contest<Cat>()
+
+    catContest.addScore(Cat("Fuzz Lightyear"), 50)
+    catContest.addScore(Cat("Katsu"), 45)
+    /*    ini error karena type nya ga cocok*/
+//    catContest.addScore(Dog("Katsu"), 45)
+
+    val topCat = catContest.getWinners().first()
+    println("top cat is ${topCat.name}")
+
+    /// Contest<Pet>
+    val petContest = Contest<Pet>()
+    petContest.addScore(Cat("Oyen"), 50)
+    petContest.addScore(Dog("Dogo"), 56)
+
+    val topPet = petContest.getWinners().first()
+    println("top pet is ${topPet.name} (a ${topPet.javaClass.toString().removePrefix("class ")})")
+
+    var dogContest: Contest<Dog>
+    dogContest = Contest()
+
+    val fishContest = Contest(Fish("Fishhhh"))
+}
