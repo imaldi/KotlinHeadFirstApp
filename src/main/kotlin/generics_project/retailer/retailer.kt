@@ -1,6 +1,6 @@
 /* Use out to make a generic type covariant */
 
-interface Retailer<T> {
+interface Retailer<out T> {
     fun sell(): T
 }
 

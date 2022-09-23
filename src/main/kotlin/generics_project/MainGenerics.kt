@@ -55,5 +55,8 @@ fun main(args: Array<String>) {
 //    accept
 
     /* Use out to make a generic type covariant */
-//    val petRetailer: Retailer<Pet> = CatRetailer()
+    val petRetailer: Retailer<Pet> = CatRetailer()
+
+    val catList: List<Cat> = listOf(Cat(""), Cat(""))
+    val petList: List<Pet> = catList
 }
