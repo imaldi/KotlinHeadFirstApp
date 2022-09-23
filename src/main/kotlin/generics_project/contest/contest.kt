@@ -5,7 +5,7 @@
 //class Contest<T: Pet>(t: T? = null) {
 
 /// versi accept a vet
-class Contest<T: Pet>(var vet: Vet<T>) {
+class Contest<T: Pet>(var vet: Vet<in T>) {
     val scores: MutableMap<T, Int> = mutableMapOf()
 
     fun addScore(t: T, score: Int = 0){
