@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98d5378e-0150-4004-bb22-2971bb85c29c" name="Changes" comment="edit program arguments in config">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generics_project/MainGenerics.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generics_project/contest/contest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generics_project/pet/pet.kt" afterDir="false" />
+    <list default="true" id="98d5378e-0150-4004-bb22-2971bb85c29c" name="Changes" comment="learn basic generics">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generics_project/retailer/README.MD" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/generics_project/retailer/retailer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/generics_project/MainGenerics.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/generics_project/MainGenerics.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +73,14 @@
       <option name="presentableId" value="Default" />
       <updated>1663643918134</updated>
     </task>
+    <task id="LOCAL-00001" summary="learn basic generics">
+      <created>1663951492143</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663951492143</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,6 +93,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="learn basic generics" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn basic generics" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
